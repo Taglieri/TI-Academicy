@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <link rel="stylesheet" href="CSS/index.css" type="text/css">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="Script/script.js"></script>
+</head>
+
+<body>
+ 
+        <header class="cabecalho">
+        <h1 class="titulo">ME ACHA!</h1>
+        <div class="subtitulo"><h5> ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h5></div>
+        <div class="bola">
+           <span class="material-icons md-inactive">travel_explore</span>
+        </div>
+        
+        </header>
+    
+    <main>
+        <section class="retangulo">
+        <div id="campo">
+            <form method="get" action=".">
+            <div><p>Cep</p><input type="text" id="cep" name="cep" value="" required placeholder="" onblur="pesquisaCep(this.value);"/></div>
+            <div><p>Rua</p><input type="text" id="rua" readonly placeholder=""></div>
+            <div><p>Bairro</p><input type="text" id="bairro" readonly placeholder=""></div>
+            <div><p>Cidade</p><input type="text" id="cidade" readonly placeholder=""></div>
+            <div><p>Estado</p><input type="text" id="estado" readonly placeholder=""></div>
+            <div><button type="button">BUSCAR</button></div>
+            </form>
+        </div>
+        </section>
+        
+    </main>
+
+    <footer></footer>
+
+
+</body>
+</html>
